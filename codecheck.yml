@@ -1,0 +1,5 @@
+build:
+- mcs src/*.cs -out:TheApp.exe
+env:
+  APP_COMMAND: mono TheApp.exe
+test: mocha --timeout 30000

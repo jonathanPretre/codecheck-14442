@@ -10,6 +10,8 @@ public class MainApp
             var page = new Uri("http://challenge-server.code-check.io/api/recursive/ask");
             string jsonString;
 
+        string hello;
+
             using (WebClient client = new WebClient())
             {
                 client.QueryString.Add("n", args[1]);
